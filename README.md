@@ -18,7 +18,7 @@ AccountHack is designed to turn one target account into a working outbound plan.
 
 Use any one of these options.
 
-### 1. Install as a Codex skill
+### 1. Install as a skill for Claude Code, Gemini CLI, Antigravity, or Codex
 
 ```bash
 npx skills add mangosteen-studio/accounthack
