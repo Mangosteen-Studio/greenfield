@@ -4,6 +4,8 @@ Free MIT-licensed AI account research skill for greenfield enterprise prospectin
 
 AccountHack helps account executives, SDRs, founders, and GTM operators research complex target accounts before outreach. Instead of starting with generic cold messaging, you run the skill inside Claude, ChatGPT, Gemini, Cursor, or another capable assistant and build a structured account brief first.
 
+Version 3 adds Trigger Radar, a LinkedIn Connections Co-Pilot, a `Why Now Score`, stronger verification safeguards, and a more explicit Account War Room output.
+
 ## What It Does
 
 AccountHack is designed to turn a single target account into a working outbound plan. A run should help you:
