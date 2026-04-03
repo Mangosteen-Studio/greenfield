@@ -1,10 +1,10 @@
 # AccountHack
 
-Free MIT-licensed AI account research skill for greenfield enterprise prospecting.
+Free MIT-licensed AI-guided interrogation skill for breaking into greenfield accounts.
 
-AccountHack helps account executives, SDRs, founders, and GTM operators research complex target accounts before outreach. Instead of starting with generic cold messaging, you run the skill inside Claude, ChatGPT, Gemini, Cursor, or another capable assistant and build a structured account brief first.
+AccountHack helps account executives, SDRs, founders, and GTM operators pressure-test complex target accounts before outreach. Instead of starting with generic cold messaging, you run the skill inside Claude, ChatGPT, Gemini, Cursor, or another capable assistant and build a structured account brief first.
 
-Version 3 adds Trigger Radar, a LinkedIn Connections Co-Pilot, a `Why Now Score`, stronger verification safeguards, and a more explicit Account War Room output.
+Version 3 adds Trigger Radar, a LinkedIn Connections Co-Pilot, stronger verification safeguards, Stage `5.5 — Executive Narrative & Access Strategy`, the Earned Right Test, warm intro briefs, and a more explicit Account War Room output.
 
 ## What It Does
 
@@ -13,7 +13,8 @@ AccountHack is designed to turn a single target account into a working outbound 
 - identify timing signals and "why now" triggers
 - find internal and external warm paths before defaulting to cold outreach
 - map executives, champions, and technical buyers
-- translate company research into persona-specific messaging
+- decide whether executive outreach is actually warranted
+- turn company research into persona-specific messaging and executive narratives
 - produce a usable 30-day account plan instead of a loose pile of notes
 
 ## Quick Start
@@ -51,28 +52,33 @@ A good run should produce:
 - target personas with specific hooks
 - a ranked warm-path priority list
 - an account wedge: pain, stakeholder, initiative, and rationale
-- first-message drafts by persona and channel
+- an executive narrative and access plan
+- conditional first-message drafts by persona and channel
+- a warm intro brief when a connector exists
 - LinkedIn / Sales Navigator search strings
 - intelligence gaps and next actions
 - a 30-day execution plan
 
 ## How It Works
 
-AccountHack uses an 11-stage research framework:
+AccountHack uses a 14-part research framework:
 
-1. Trigger Radar
-2. Internal Intelligence
-3. Company Website and Product Analysis
-4. Hiring Signals and Growth Intelligence
-5. Market and Financial Intelligence
-6. Leadership Deep Dive
-7. LinkedIn and Change Agent Intelligence
-8. Relationship and Warm Path Mapping
-9. Technical Landscape and Competitive Intelligence
-10. Industry Language and the "One Level Deeper" Rule
-11. Persona-Driven Messaging
+1. LinkedIn Connections Co-Pilot
+2. Pre-Stage company context qualifier
+3. Trigger Radar
+4. Internal Intelligence
+5. Company Website and Product Analysis
+6. Hiring Signals and Growth Intelligence
+7. Market and Financial Intelligence
+8. Leadership Deep Dive
+9. Executive Narrative & Access Strategy
+10. LinkedIn and Change Agent Intelligence
+11. Relationship and Warm Path Mapping
+12. Technical Landscape and Competitive Intelligence
+13. Industry Language and the "One Level Deeper" Rule
+14. Persona-Driven Messaging
 
-The final output is an Account War Room plus a 30-day execution OS.
+The final output is an Account War Room, warm intro brief, and 30-day execution OS.
 
 ## Operating Principles
 
@@ -81,7 +87,8 @@ AccountHack is opinionated about research quality:
 - no generic output
 - branch on the AE's actual answers
 - go one level deeper than surface industry knowledge
-- distinguish verified facts from assumptions
+- distinguish verified facts from assumptions and inference
+- mark unsupported claims `UNVERIFIED`
 - cite or label evidence when account-specific claims are made
 - adapt to available tools instead of pretending every system is accessible
 
