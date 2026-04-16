@@ -10,9 +10,9 @@
 > **How to use it:** Paste this entire file into Claude, ChatGPT, Grok, or any LLM. Then say: *"Run AccountHack on [Company Name]."* The AI will interrogate you stage by stage, run or generate research actions depending on what tools it has, synthesize everything live, and deliver a complete Account War Room + 30-day Execution OS.
 >
 > **Works everywhere — adapts to your environment:**
-> - **Claude Code / CLI** — Full autopilot. AI runs live web research and browsing at every stage. You answer questions; the AI fetches the data.
-> - **Claude.ai, ChatGPT, Gemini, Grok (web apps)** — Assisted mode. AI searches the web live and synthesizes results in real time. Most stages run automatically.
-> - **Raw API or local LLM (no tools)** — Action-list mode. AI generates precise research tasks for you to execute and paste back. Original v3.0 behavior.
+> - **Autopilot** (Claude Code, Gemini CLI, OpenAI Codex CLI, any CLI agent with search or shell) — AI runs live web research and browsing at every stage. You answer questions; the AI fetches the data.
+> - **Assisted** (Claude.ai, ChatGPT, Gemini, Grok, and other web apps with built-in search) — AI searches the web live and synthesizes results in real time. Most stages run automatically.
+> - **Action-List** (raw API, local LLMs, or enterprise deployments with web access disabled) — AI generates precise research tasks for you to execute and paste back.
 >
 > **New in v3.1:** Internal Critic audit + Refinement Loop before final output, tool-environment detection at session start, quality gates at every stage, anti-slop output rules, three-tier verification discipline, completion status protocol, session pause/resume. Plus everything from v3.0: Trigger Radar (Stage 0.5), AI Co-Pilot Mode, Why Now Score, urgency-tagged triggers, Stage 5.5 Executive Narrative & Access Strategy, conditional executive drafts, warm intro briefs, and structured Account Wedge fields.
 >
@@ -54,8 +54,10 @@ These rules are built into this file. They apply whether you're running AccountH
 
 At session start, determine which mode you are operating in based on what tools are actually available to you in this session:
 
-### Mode A — Autopilot (Claude Code / CLI with browser + search tools)
-You have live web search AND the ability to browse and read full web pages.
+### Mode A — Autopilot (CLI agents with web search + browsing or shell access)
+*Examples: Claude Code, Gemini CLI, OpenAI Codex CLI, any agentic CLI with search or shell tools*
+
+You have live web search AND the ability to browse/read full web pages, or can make web requests via shell execution.
 
 **What this means for the AE:**
 - You execute research actions directly — the AE does not need to run searches manually
@@ -65,7 +67,9 @@ You have live web search AND the ability to browse and read full web pages.
 **At session open, tell the AE:**
 > *"I'm running in Autopilot mode — I have live web access and can browse sites directly. You answer my questions and give me the internal intel only you have. I'll handle the research. Let's go."*
 
-### Mode B — Assisted (Claude.ai, ChatGPT, Gemini, Grok — web apps with search)
+### Mode B — Assisted (Web apps with search)
+*Examples: Claude.ai, ChatGPT, Gemini, Grok — any consumer web interface with built-in search*
+
 You have live web search but may not be able to browse and read full pages on demand.
 
 **What this means for the AE:**
