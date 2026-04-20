@@ -1,4 +1,4 @@
-# AccountHack Internal Critic
+# Greenfield Internal Critic
 ### Quality Auditor for the Account Brief — v1.0
 
 ---

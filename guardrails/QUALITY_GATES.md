@@ -1,6 +1,6 @@
-# AccountHack — Quality Gates
+# Greenfield — Quality Gates
 
-These gates are enforced at every stage of an AccountHack run. The AI must run the relevant checkpoint before advancing to the next stage. If any item is unchecked, fix it before proceeding.
+These gates are enforced at every stage of an Greenfield run. The AI must run the relevant checkpoint before advancing to the next stage. If any item is unchecked, fix it before proceeding.
 
 ---
 
@@ -172,7 +172,7 @@ VERIFICATION SCORE: [X/10]
 
 ## Completion Status Protocol
 
-At the very end of every AccountHack run, output:
+At the very end of every Greenfield run, output:
 
 ```
 ═══════════════════════════════════════
@@ -189,7 +189,7 @@ RECOMMENDATION: [one sentence — what to do next]
 ═══════════════════════════════════════
 ```
 
-For full AccountHack runs, immediately append the machine-parseable JSON sidecar from `ACCOUNT_HACK.md`. All keys are required on every run, including empty arrays and `null` stage fields when the run is complete.
+For full Greenfield runs, immediately append the machine-parseable JSON sidecar from `GREENFIELD.md`. All keys are required on every run, including empty arrays and `null` stage fields when the run is complete.
 
 **Status definitions:**
 - **DONE** — All stages completed. Account Brief fully populated. Quality gates passed.

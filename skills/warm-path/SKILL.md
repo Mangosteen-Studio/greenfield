@@ -40,7 +40,7 @@ Ask:
 
 *"Do you want to supercharge this with your LinkedIn connections? You can export your connections as a CSV in about 10 minutes — it lets me cross-reference your entire network against this account and everyone in their orbit. Want to do that now, or should we work with Sales Nav searches?"*
 
-If yes → provide the exact LinkedIn export instructions from ACCOUNT_HACK.md and wait for the CSV.
+If yes → provide the exact LinkedIn export instructions from GREENFIELD.md and wait for the CSV.
 If no → proceed with Sales Nav search strings.
 
 ### Step 2a — Branch examples
@@ -56,7 +56,7 @@ When the AE pastes the CSV, run the full 5-step analysis immediately:
 4. **Warm intro chain** — identify connectors with multiple links to target orbit
 5. **Connection recency scoring** — weight by connection date
 
-Output the LinkedIn Warm Path Report in the format defined in ACCOUNT_HACK.md.
+Output the LinkedIn Warm Path Report in the format defined in GREENFIELD.md.
 
 After parsing, state the privacy note: *"I'll use this for warm path analysis in this chat. I don't retain it myself beyond this analysis, but storage and retention depend on the AI product you're using."*
 
@@ -177,4 +177,4 @@ TOP PRIORITY PATH: [one sentence — the single warmest path and the action to t
 ```
 
 ### Routing
-*"Warm path mapping complete. Want to run a full AccountHack, or focus on leadership intel for your top exec target?"*
+*"Warm path mapping complete. Want to run a full Greenfield, or focus on leadership intel for your top exec target?"*

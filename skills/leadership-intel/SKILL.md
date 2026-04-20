@@ -9,7 +9,7 @@ description: |
 
 # Leadership Intel & Executive Access
 
-Use this skill when the AE knows who they want to reach at a target account and needs the deep executive research, narrative construction, and message drafts to do it right. This is the highest-stakes skill in AccountHack — bad executive outreach permanently poisons an account.
+Use this skill when the AE knows who they want to reach at a target account and needs the deep executive research, narrative construction, and message drafts to do it right. This is the highest-stakes skill in Greenfield — bad executive outreach permanently poisons an account.
 
 ## Required Context
 Before running, collect:
@@ -162,7 +162,7 @@ For each draft include:
 
 ### Step 8 — Output
 
-The complete Stage 5.5 output block as defined in ACCOUNT_HACK.md, including:
+The complete Stage 5.5 output block as defined in GREENFIELD.md, including:
 - Routing Decision
 - Earned Right Test result
 - Executive Narrative

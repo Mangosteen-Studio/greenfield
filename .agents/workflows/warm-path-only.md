@@ -17,7 +17,7 @@ description: Find every warm path into a target account — LinkedIn, internal, 
 
 4. LinkedIn CSV decision: export or Sales Nav.
 
-5. If CSV provided: run the full LinkedIn Warm Path analysis from `ACCOUNT_HACK.md`.
+5. If CSV provided: run the full LinkedIn Warm Path analysis from `GREENFIELD.md`.
 
 6. Run the company-type branch (Startup / Growth / Enterprise).
 

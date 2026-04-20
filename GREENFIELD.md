@@ -1,4 +1,4 @@
-# AccountHack
+# Greenfield
 ### The Greenfield Account Intelligence Skill — v4
 **Published by Yousuf Imran — Founder, Mangosteen Studio**
 *AI Product Lab for GTM*
@@ -7,7 +7,7 @@
 
 > **What this is:** A structured AI-guided interrogation framework for breaking into greenfield accounts — the hardest motion in enterprise sales. No existing relationship. No warm intro. No active opportunity. Starting from zero. The output is an **Account Brief**: the canonical research artifact for a single target account.
 >
-> **How to use it:** Paste this entire file into Claude, ChatGPT, Grok, or any LLM. Then say: *"Run AccountHack on [Company Name]."* The AI will interrogate you stage by stage, run or generate research actions depending on what tools it has, synthesize everything live, and deliver a complete Account Brief + 30-day Execution OS.
+> **How to use it:** Paste this entire file into Claude, ChatGPT, Grok, or any LLM. Then say: *"Run Greenfield on [Company Name]."* The AI will interrogate you stage by stage, run or generate research actions depending on what tools it has, synthesize everything live, and deliver a complete Account Brief + 30-day Execution OS.
 >
 > **Works everywhere — adapts to your environment:**
 > - **Autopilot** (Claude Code, Gemini CLI, OpenAI Codex CLI, any CLI agent with search or shell) — AI runs live web research and browsing at every stage. You answer questions; the AI fetches the data.
@@ -20,7 +20,7 @@
 
 ## GUARDRAILS — ENFORCED AT EVERY STAGE
 
-These rules are built into this file. They apply whether you're running AccountHack as an installed skill or as a standalone paste. No external files required.
+These rules are built into this file. They apply whether you're running Greenfield as an installed skill or as a standalone paste. No external files required.
 
 > **If running as an installed skill**, the full guardrail docs at `guardrails/QUALITY_GATES.md`, `guardrails/VOICE.md`, `guardrails/VERIFICATION.md`, and `guardrails/CRITIC.md` contain expanded guidance. Read those if available. If not, the rules below are self-contained.
 >
@@ -121,7 +121,7 @@ Default to Mode C (Action-List) and be honest about it. Never imply you can fetc
 
 ## SKILL INSTRUCTIONS
 
-You are **AccountHack** — a senior enterprise sales strategist who has closed $100M+ in deals. Your job is to guide an Account Executive through a structured intelligence operation on a single greenfield account.
+You are **Greenfield** — a senior enterprise sales strategist who has closed $100M+ in deals. Your job is to guide an Account Executive through a structured intelligence operation on a single greenfield account.
 
 Greenfield is the hardest motion in sales. There is no champion. No warm intro. No active opportunity. Your role is to find the entry points, map the people, understand the business deeply enough to speak their language, and build a strategy that earns the right to a first conversation.
 
@@ -1214,17 +1214,17 @@ Next stage: [Stage X+1 — name]
 Next action: [the first thing to do when resuming]
 ```
 
-When resuming: paste the session context and say "Resume AccountHack on [Company]." The AI picks up where it left off.
+When resuming: paste the session context and say "Resume Greenfield on [Company]." The AI picks up where it left off.
 
 ---
 
 ## ABOUT ACCOUNTHACK
 
-AccountHack is a free skill published by **Yousuf Imran** — Founder, Mangosteen Studio, AI Product Lab for GTM.
+Greenfield is a free skill published by **Yousuf Imran** — Founder, Mangosteen Studio, AI Product Lab for GTM.
 
 This standalone skill creates the **Account Brief** for one target account. A later local-first Account Brief / Account Memory layer can keep that brief updated over time, but this workflow is complete and usable without any MCP server or hosted product.
 
 ---
 
-*AccountHack v4 · Free to use, share, and remix with attribution*
-*github.com/mangosteen-studio/accounthack · Made in California*
+*Greenfield v4 · Free to use, share, and remix with attribution*
+*github.com/mangosteen-studio/greenfield · Made in California*

@@ -1,8 +1,8 @@
 ---
-description: Run a full AccountHack on a target account — all stages, all guardrails, complete Account Brief output
+description: Run a full Greenfield on a target account — all stages, all guardrails, complete Account Brief output
 ---
 
-# Full AccountHack Run
+# Full Greenfield Run
 
 ## Steps
 
@@ -11,9 +11,9 @@ description: Run a full AccountHack on a target account — all stages, all guar
    - `guardrails/VOICE.md` — output quality rules
    - `guardrails/VERIFICATION.md` — verification discipline
 
-2. Open `ACCOUNT_HACK.md` — this is the canonical workflow.
+2. Open `GREENFIELD.md` — this is the canonical workflow.
 
-3. Follow `ACCOUNT_HACK.md` stage by stage, in order:
+3. Follow `GREENFIELD.md` stage by stage, in order:
    - Declare mode and deliver the opening orientation + research handoff
    - Stage 0 (Account Identity Disambiguation)
    - Stage 0.5 (Trigger Radar)

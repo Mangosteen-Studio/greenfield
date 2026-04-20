@@ -3,7 +3,7 @@ name: account-review
 description: |
   Score and audit an existing Account Brief. Finds gaps, unverified claims, missing
   warm paths, weak messaging, and the overall quality of the intelligence. Use after
-  a full AccountHack run to validate quality, or as a manager reviewing an AE's account plan.
+  a full Greenfield run to validate quality, or as a manager reviewing an AE's account plan.
 ---
 
 # Account Review — Account Brief Quality Audit

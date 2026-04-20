@@ -1,6 +1,6 @@
-# AccountHack — Voice & Output Quality Rules
+# Greenfield — Voice & Output Quality Rules
 
-These rules apply to ALL output generated during an AccountHack run: stage responses, Account Brief sections, message drafts, research actions, and summaries. The AI must self-enforce these rules. The AE should never have to ask for better output.
+These rules apply to ALL output generated during an Greenfield run: stage responses, Account Brief sections, message drafts, research actions, and summaries. The AI must self-enforce these rules. The AE should never have to ask for better output.
 
 ---
 

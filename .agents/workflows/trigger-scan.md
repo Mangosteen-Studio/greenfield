@@ -21,6 +21,6 @@ description: Quick trigger scan on a target account — urgency signals and Why 
 6. Run the Stage 0.5 checkpoint from `guardrails/QUALITY_GATES.md`.
 
 7. Based on the Why Now Score, recommend next steps:
-   - 8-10: Move now → offer full AccountHack or warm path mapping
+   - 8-10: Move now → offer full Greenfield or warm path mapping
    - 5-7: Build slowly → offer trigger monitoring setup
    - <5: Park → suggest setting alerts and revisiting

@@ -8,7 +8,7 @@ description: |
 
 # Trigger Radar — Standalone Urgency Scan
 
-Use this skill when the AE wants a quick urgency assessment on a target account without running the full AccountHack interrogation. This is Stage 0.5 extracted as an independent, focused skill.
+Use this skill when the AE wants a quick urgency assessment on a target account without running the full Greenfield interrogation. This is Stage 0.5 extracted as an independent, focused skill.
 
 ## Required Context
 Before running, collect:
@@ -112,8 +112,8 @@ If BLOCKED: state what's missing and what the AE needs to provide.
 ### Routing
 After completing the trigger scan, tell the AE:
 
-*"Trigger scan complete. Want to go deeper? I can run a full AccountHack on this account, or focus on just warm paths or leadership intel."*
+*"Trigger scan complete. Want to go deeper? I can run a full Greenfield on this account, or focus on just warm paths or leadership intel."*
 
-- Full run → direct to [ACCOUNT_HACK.md](../../ACCOUNT_HACK.md)
+- Full run → direct to [GREENFIELD.md](../../GREENFIELD.md)
 - Warm paths → direct to [warm-path skill](../warm-path/SKILL.md)
 - Leadership intel → direct to [leadership-intel skill](../leadership-intel/SKILL.md)

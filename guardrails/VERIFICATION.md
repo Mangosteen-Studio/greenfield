@@ -1,6 +1,6 @@
-# AccountHack — Verification Discipline
+# Greenfield — Verification Discipline
 
-This document defines the verification rules that AccountHack enforces across every stage. These rules exist because AI-generated sales research is only valuable if the AE can trust it. A single hallucinated executive name or fabricated funding amount destroys credibility in the room.
+This document defines the verification rules that Greenfield enforces across every stage. These rules exist because AI-generated sales research is only valuable if the AE can trust it. A single hallucinated executive name or fabricated funding amount destroys credibility in the room.
 
 ---
 
@@ -78,13 +78,13 @@ Status: UNVERIFIED — could not confirm in this session
 Action for AE: [the exact step to verify — specific LinkedIn search, specific Crunchbase check, specific person to ask]
 ```
 
-**This is not a failure.** An honest "I don't know, here's how to find out" is worth more than a confident-sounding hallucination. The AE trusts AccountHack because it tells them what it doesn't know.
+**This is not a failure.** An honest "I don't know, here's how to find out" is worth more than a confident-sounding hallucination. The AE trusts Greenfield because it tells them what it doesn't know.
 
 ---
 
 ## Tool Declaration
 
-At the start of every AccountHack session, the AI must state:
+At the start of every Greenfield session, the AI must state:
 
 ```
 TOOLS AVAILABLE THIS SESSION
