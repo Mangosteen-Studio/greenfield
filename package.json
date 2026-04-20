@@ -1,0 +1,47 @@
+{
+  "name": "@mangosteenstudio/greenfield",
+  "version": "4.0.0",
+  "description": "Free MIT-licensed AI-guided interrogation skill for breaking into greenfield accounts and producing an Account Brief.",
+  "license": "MIT",
+  "type": "module",
+  "bin": {
+    "greenfield": "bin/greenfield.js"
+  },
+  "files": [
+    "GREENFIELD.md",
+    "SKILL.md",
+    "README.md",
+    "LICENSE",
+    "agents",
+    "guardrails",
+    "skills",
+    ".agents/workflows",
+    "bin"
+  ],
+  "keywords": [
+    "ai",
+    "sales",
+    "prospecting",
+    "greenfield",
+    "account-research",
+    "account-planning",
+    "gtm",
+    "claude-code",
+    "codex",
+    "cursor"
+  ],
+  "homepage": "https://greenfield.tools",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Mangosteen-Studio/greenfield.git"
+  },
+  "bugs": {
+    "url": "https://github.com/Mangosteen-Studio/greenfield/issues"
+  },
+  "publishConfig": {
+    "access": "public"
+  },
+  "engines": {
+    "node": ">=18"
+  }
+}
