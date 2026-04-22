@@ -1,11 +1,11 @@
 {
-  "name": "@mangosteenstudio/greenfield",
-  "version": "4.0.0",
+  "name": "@mangosteenstudio/greenfieldaccount",
+  "version": "4.0.1",
   "description": "Free MIT-licensed AI-guided interrogation skill for breaking into greenfield accounts and producing an Account Brief.",
   "license": "MIT",
   "type": "module",
   "bin": {
-    "greenfield": "bin/greenfield.js"
+    "greenfieldaccount": "bin/greenfield.js"
   },
   "files": [
     "GREENFIELD.md",

@@ -102,5 +102,6 @@ Every factual claim in the Account Brief must be attributable. Use these tags:
 ### Stage response formatting
 - Start each stage response with a brief acknowledgment of what the AE said (proves you listened)
 - Then: the research synthesis from this stage
-- Then: the next set of questions and actions
+- Then: the next single question, or the research actions if the stage question sequence is complete
+- Never ask multiple stage questions in one response unless the AE explicitly asks for the full checklist
 - End with: "Paste any raw data you have for this stage — I'll synthesize it immediately."

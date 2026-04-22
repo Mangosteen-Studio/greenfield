@@ -12,10 +12,10 @@ function usage() {
   console.log(`Greenfield
 
 Usage:
-  greenfield help
-  greenfield print
-  greenfield init [target-dir]
-  greenfield path
+  greenfieldaccount help
+  greenfieldaccount print
+  greenfieldaccount init [target-dir]
+  greenfieldaccount path
 
 Commands:
   print     Print the canonical GREENFIELD.md to stdout

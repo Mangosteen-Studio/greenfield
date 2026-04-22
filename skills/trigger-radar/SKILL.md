@@ -42,7 +42,7 @@ If you do not have live search or browsing tools, add:
 - If the AE says `"I have nothing yet"` → run the full trigger scan instead of stalling on missing context.
 
 ### Step 2 — Interrogate
-Ask these 3 questions:
+Ask these 3 questions one at a time. Wait for the AE's answer before asking the next question. Do not dump the full list into chat unless the AE explicitly asks for the checklist.
 1. What's the one thing that would make this account urgent in the next 90 days — for them, not for you?
 2. Have you already seen any signals — recent funding, leadership change, earnings miss, acquisition, new product launch, regulatory shift?
 3. Is there a specific internal event at your company (QBR, SKO, end of quarter) that creates a timing reason to move on this now?

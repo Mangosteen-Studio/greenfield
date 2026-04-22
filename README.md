@@ -19,7 +19,16 @@ A Greenfield run helps you:
 
 ## Quick Start
 
-### 1. Install as a skill (Claude Code, Gemini CLI, Antigravity, Codex)
+### 1. Install from npm
+
+```bash
+npm i -g @mangosteenstudio/greenfieldaccount
+greenfieldaccount init
+```
+
+This copies the canonical prompt, skill wrapper, guardrails, and focused skills into a local `./greenfield` folder.
+
+### 2. Install as a skill (Claude Code, Gemini CLI, Antigravity, Codex)
 
 ```bash
 npx skills add mangosteen-studio/greenfield
@@ -80,6 +89,7 @@ Greenfield uses a 14-part research framework:
 Greenfield is opinionated about research quality:
 
 - no generic output — if it could apply to any company, it is not good enough
+- ask one question at a time instead of dumping question batches
 - branch on the AE's actual answers, not a fixed script
 - go one level deeper than surface industry knowledge
 - distinguish verified facts from assumptions and inference

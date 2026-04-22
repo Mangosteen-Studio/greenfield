@@ -89,7 +89,7 @@ Based on the AE's company size, run the appropriate branch:
 - Industry analyst relationships
 
 ### Step 5 — Internal Intelligence (Stage 1)
-Ask the Stage 1 questions:
+Ask the Stage 1 questions one at a time. Wait for the AE's answer before asking the next question:
 1. Has your company ever touched this account?
 2. Any departments with existing relationships you don't know about?
 3. Is there a Slack channel or internal forum to post in?
@@ -101,7 +101,7 @@ Generate the internal bat signal message as paste-ready copy.
 - If the AE says `"Our partnerships team knows them"` → surface that relationship and draft the intro request immediately.
 
 ### Step 6 — Warm Path Activation (Stage 6)
-Ask:
+Ask one question at a time. Wait for the AE's answer before asking the next question:
 1. Do you already have any first-degree or second-degree connections into this account or its orbit?
 2. Do any existing customers know someone there?
 3. Have you asked your manager, SE, exec sponsor, or CSM team if they know anyone there?
