@@ -69,6 +69,16 @@ Run Greenfield on [Company Name]
 - 30-day execution plan with trigger-based adjustments
 - human-readable completion block plus a JSON status sidecar
 
+## When to use this vs the other Greenfield skills
+
+- **Greenfield**: use when you are breaking into a new-logo account with no real relationship yet.
+- **POV**: use when you already have evidence and need the financially grounded narrative, business case, or outreach angle.
+- **Executive Briefing**: use when the next move is selling or preparing an executive meeting, executive demo, or briefing.
+- **Account Expansion**: use when the account is already a customer and you need to decide whether expansion is earned.
+- **QBR**: use when you need an internal sales QBR, customer QBR, EBR, renewal review, value review, pipeline review, or next-quarter action plan.
+
+They work together. Greenfield finds the wedge and builds the Account Brief. POV sharpens the point of view. Executive Briefing turns executive access into a meeting plan. Account Expansion handles existing-customer growth. QBR turns the quarter into a clear story and action plan.
+
 ## How It Works
 
 Greenfield uses a 14-part research framework:

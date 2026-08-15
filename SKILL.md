@@ -36,6 +36,15 @@ When the user's request matches a focused skill, route to it instead of running 
 
 If no specific pattern matches, default to the full run.
 
+## Suite Handoffs
+
+Greenfield is for breaking into new-logo accounts. If the user's real need is outside that motion, route cleanly instead of forcing the Greenfield workflow:
+
+- **POV** — use when the user already has account evidence and needs a financially grounded point of view, business case, cold email, LinkedIn DM, warm intro ask, or internal approval narrative.
+- **Executive Briefing** — use when the user is selling, qualifying, or preparing an executive meeting, executive demo, or briefing.
+- **Account Expansion** — use when the account is already a customer and the user needs to evaluate expansion readiness, whitespace, relationship health, and risk.
+- **QBR** — use when the user needs an internal sales QBR, customer QBR, EBR, renewal review, value review, pipeline review, or next-quarter performance plan.
+
 ## Invocation
 
 When the user asks to run Greenfield, start with the exact opener defined in [GREENFIELD.md](./GREENFIELD.md) and continue from there.

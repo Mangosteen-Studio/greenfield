@@ -1278,6 +1278,15 @@ Greenfield is a free skill published by **Yousuf Imran** — Founder, Mangosteen
 
 This standalone skill creates the **Account Brief** for one target account. A later local-first Account Brief / Account Memory layer can keep that brief updated over time, but this workflow is complete and usable without any MCP server or hosted product.
 
+Part of the Greenfield suite:
+- **Greenfield** — break into new-logo accounts and produce an Account Brief.
+- **POV** — turn verified evidence into a financially grounded point of view, business case, or outreach angle.
+- **Executive Briefing** — sell, qualify, and prepare executive meetings, executive demos, and briefings.
+- **Account Expansion** — evaluate whether an existing customer account is ready for more revenue.
+- **QBR** — prepare internal sales QBRs, customer QBRs, EBRs, renewal reviews, value reviews, and next-quarter action plans.
+
+If the user's request is clearly one of those other motions, route them to that skill instead of forcing a Greenfield run.
+
 ---
 
 *Greenfield v4 · Free to use, share, and remix with attribution*
