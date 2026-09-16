@@ -1,0 +1,4 @@
+interface:
+  display_name: "Co-Selling"
+  short_description: "Build detailed co-sell plans from partner signals"
+  default_prompt: "Use $co-selling to research my chosen partner's signals and build a detailed co-sell plan covering field engagement, marketplace mechanics, customer benefits, and joint execution."

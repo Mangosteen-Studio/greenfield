@@ -139,8 +139,11 @@ Don't need a full run? Greenfield includes focused skills you can invoke indepen
 | **Warm Path** | LinkedIn CSV analysis, internal intel, and Warm Path Activation | Find the easiest doors before going cold |
 | **Leadership Intel** | Executive deep dive, canonical Earned Right Test, narrative, message drafts | Earn the right to contact a specific executive |
 | **Account Review** | Quality audit of a completed Account Brief | Validate your research before going into the field |
+| **[Co-Selling](./skills/co-selling/SKILL.md)** | Partner signals, marketplace routes, seller incentives, and a detailed joint execution plan | Sell through a hyperscaler or platform, select partners as a hyperscaler seller, or plan a named customer opportunity |
 
 Each skill enforces the same guardrails as the full run.
+
+Run Co-Selling with `$co-selling` or ask: `Run Co-Selling with [partner] for [product or account].` Keep its `references/` folder alongside `SKILL.md`; it contains the entry paths, marketplace checks, partner-signal research, and detailed Co-Sell Brief structure.
 
 ## Guardrails
 
@@ -178,6 +181,7 @@ EARNED RIGHT TEST: PASSED | NOT YET PASSED
   - [leadership-intel/](./skills/leadership-intel/SKILL.md): executive research & access
   - [quick-scan/](./skills/quick-scan/SKILL.md): 5-minute account triage
   - [account-review/](./skills/account-review/SKILL.md): Account Brief quality audit
+  - [co-selling/](./skills/co-selling/SKILL.md): partner-led sales and detailed co-sell plans
 - **.agents/workflows/** — orchestration workflows for full runs, trigger-only scans, and warm-path-only runs
 
 ## Website
