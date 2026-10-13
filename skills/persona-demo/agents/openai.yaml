@@ -1,0 +1,4 @@
+interface:
+  display_name: "Persona Demo"
+  short_description: "Animated demos inside your buyer’s working day"
+  default_prompt: "Use $persona-demo to build a click-through HTML demo showing one buyer persona using our solution."

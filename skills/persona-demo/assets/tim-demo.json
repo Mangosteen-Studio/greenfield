@@ -1,0 +1,175 @@
+{
+  "title": "One delayed order. A clearer next step.",
+  "product": "Aster",
+  "persona": {
+    "name": "Tim",
+    "role": "Customer service representative"
+  },
+  "scenarioLabel": "Illustrative scenario \u00b7 fictional people and product \u00b7 Concept UI",
+  "evidence": [
+    {
+      "id": "concept",
+      "claim": "Aster and all depicted capabilities are fictional examples for this template.",
+      "source": "Authored illustrative scenario; not a real product or customer claim.",
+      "status": "illustrative"
+    }
+  ],
+  "scenes": [
+    {
+      "id": "arrival",
+      "chapter": "The request",
+      "headline": "\u201cWhere is my order?\u201d",
+      "body": "It is 9:14. Maya needs order #1842 for an event tomorrow. Her message lands with Tim.",
+      "visualLabel": "Case #1842 / incoming request",
+      "cards": [
+        {
+          "label": "Customer message",
+          "value": "Needed tomorrow",
+          "detail": "\u201cCan you tell me whether it will arrive?\u201d"
+        },
+        {
+          "label": "Tim\u2019s next move",
+          "value": "Find the facts",
+          "detail": "He needs a current delivery status before making a promise."
+        }
+      ],
+      "narration": "Meet Tim. A customer needs an order tomorrow. Before he can help, he needs to know what happened.",
+      "question": "What would Tim check first in your team?",
+      "notes": "Ask the buyer where delivery updates live today. Do not imply this is their current process.",
+      "evidenceIds": [
+        "concept"
+      ],
+      "seconds": 10
+    },
+    {
+      "id": "context",
+      "chapter": "The context",
+      "headline": "One case. The pieces beside it.",
+      "body": "In this imagined workflow, Aster puts the order, latest carrier event and conversation in the same case.",
+      "visualLabel": "Concept UI / Aster case workspace",
+      "cards": [
+        {
+          "label": "Order #1842",
+          "value": "Carrier delay",
+          "detail": "The latest update has no confirmed delivery date."
+        },
+        {
+          "label": "Customer context",
+          "value": "Event tomorrow",
+          "detail": "Maya has explained why timing matters."
+        },
+        {
+          "label": "Decision needed",
+          "value": "Check alternatives",
+          "detail": "Tim has context. He still owns the next step."
+        }
+      ],
+      "narration": "Now imagine Tim seeing the order, carrier update and customer conversation together. The delivery date is still unconfirmed.",
+      "question": "Which piece of context is hardest to find today?",
+      "notes": "Concept capability only. Replace with verified product evidence and real capture before using for a prospect.",
+      "evidenceIds": [
+        "concept"
+      ],
+      "seconds": 10
+    },
+    {
+      "id": "decision",
+      "chapter": "The decision",
+      "headline": "Give Tim a useful choice.",
+      "body": "Tim can ask fulfillment about an alternative before promising Maya a replacement. Explore how his next move changes the handoff.",
+      "visualLabel": "Concept UI / choose a next step",
+      "cards": [
+        {
+          "label": "Known",
+          "value": "Date unconfirmed",
+          "detail": "The original shipment has a carrier delay."
+        },
+        {
+          "label": "Available action",
+          "value": "Ask fulfillment",
+          "detail": "Request an availability check with the case attached."
+        }
+      ],
+      "narration": "Tim can ask fulfillment about an alternative, with the case already attached. He does not promise a replacement before it is checked.",
+      "question": "Where should a person stay in control?",
+      "notes": "Discuss approval boundaries. These are illustrative alternatives, not actual product automation.",
+      "evidenceIds": [
+        "concept"
+      ],
+      "seconds": 10,
+      "choices": [
+        {
+          "label": "Check an alternative",
+          "result": "Fulfillment receives an availability check with order #1842 and the deadline attached."
+        },
+        {
+          "label": "Request a carrier update",
+          "result": "The case stays with Tim while he asks for a current carrier update. No delivery date is promised."
+        }
+      ],
+      "defaultChoice": 0
+    },
+    {
+      "id": "handoff",
+      "chapter": "The handoff",
+      "headline": "The context travels with the case.",
+      "body": "The fulfillment teammate receives order #1842, the event deadline and Tim\u2019s question together.",
+      "visualLabel": "Concept UI / fulfillment request",
+      "cards": [
+        {
+          "label": "Attached context",
+          "value": "Order #1842",
+          "detail": "Carrier delay \u00b7 event tomorrow \u00b7 customer conversation"
+        },
+        {
+          "label": "Requested check",
+          "value": "An alternative?",
+          "detail": "Confirm stock and delivery options before replying."
+        },
+        {
+          "label": "Customer update",
+          "value": "Checking options",
+          "detail": "Tim tells Maya what he is doing, without inventing a date."
+        }
+      ],
+      "narration": "The next teammate receives the order, the deadline and the question together. Tim can tell Maya what is being checked.",
+      "question": "What would the next teammate need to act?",
+      "notes": "Do not claim reduced handling time. The observable change is a context-bearing request.",
+      "evidenceIds": [
+        "concept"
+      ],
+      "seconds": 10
+    },
+    {
+      "id": "ending",
+      "chapter": "The next step",
+      "headline": "A clearer answer starts here.",
+      "body": "Maya has an honest update. Fulfillment has a specific request. Tim knows what he is waiting for.",
+      "visualLabel": "Case #1842 / awaiting availability check",
+      "cards": [
+        {
+          "label": "For Maya",
+          "value": "An honest update",
+          "detail": "No invented delivery promise."
+        },
+        {
+          "label": "For fulfillment",
+          "value": "A specific request",
+          "detail": "Check an alternative for order #1842."
+        },
+        {
+          "label": "For Tim",
+          "value": "A visible next step",
+          "detail": "Follow up when fulfillment responds."
+        }
+      ],
+      "narration": "Maya has an honest update. Fulfillment has a specific request. Where would this kind of handoff help your team?",
+      "question": "Which of your team\u2019s handoffs would you put in this story?",
+      "notes": "Invite correction and choose a real scenario for a capture-backed version.",
+      "evidenceIds": [
+        "concept"
+      ],
+      "seconds": 10
+    }
+  ]
+}

@@ -1,0 +1,76 @@
+{
+  "title": "One delayed order. A clearer next step.",
+  "product": "Aster",
+  "persona": {
+    "name": "Tim",
+    "role": "Customer service representative"
+  },
+  "scenarioLabel": "Illustrative scenario \u00b7 fictional people and product \u00b7 Concept UI",
+  "evidence": [
+    {
+      "id": "concept",
+      "claim": "Aster and all depicted capabilities are fictional examples for this template.",
+      "source": "Authored illustrative scenario; not a real product or customer claim.",
+      "status": "illustrative"
+    }
+  ],
+  "shots": [
+    {
+      "id": "event",
+      "seconds": 7,
+      "headline": "\u201cWill it arrive tomorrow?\u201d",
+      "narration": "Meet Tim. A customer needs her order tomorrow. The carrier update says delayed.",
+      "visual": "Tim at a service desk notices a customer message. Add exact message text later in the editor.",
+      "mediaType": "generated-scene",
+      "generationPrompt": "Natural editorial workplace film, fictional adult customer service representative at a calm service desk, medium side shot, glances from an unreadable laptop to a notebook, concerned but composed, soft morning light, gentle camera push, no dialogue, no visible brands, no readable screen text. Landscape 16:9. Fictional character, not based on a real person.",
+      "evidenceIds": [
+        "concept"
+      ]
+    },
+    {
+      "id": "context",
+      "seconds": 10,
+      "headline": "The right context, in one case.",
+      "narration": "Imagine the order, the carrier update and the conversation together. Tim can see what is known, and what still needs checking.",
+      "visual": "Labeled Aster concept diagram: order #1842 connects to carrier delay and event tomorrow. Replace with an authorized real capture for a real product.",
+      "mediaType": "diagram",
+      "evidenceIds": [
+        "concept"
+      ]
+    },
+    {
+      "id": "decision",
+      "seconds": 10,
+      "headline": "Check first. Then promise.",
+      "narration": "He asks fulfillment about an alternative, with the case attached. He keeps the delivery promise open until someone confirms the options.",
+      "visual": "Labeled concept UI: Tim selects an availability check. Show attached order and deadline, then the request being handed off.",
+      "mediaType": "diagram",
+      "evidenceIds": [
+        "concept"
+      ]
+    },
+    {
+      "id": "handoff",
+      "seconds": 10,
+      "headline": "The next person has the context.",
+      "narration": "The teammate receives a specific request. Maya gets an honest update. Tim knows what he is waiting for.",
+      "visual": "Generic fulfillment colleague receives a task; overlay precise case details during assembly, not in generated footage.",
+      "mediaType": "generated-scene",
+      "generationPrompt": "Natural editorial workplace film, fictional adult fulfillment coordinator in a tidy small warehouse office, medium shot receiving a task on a screen with no readable text, considers it and turns toward shelving, soft neutral daylight, restrained camera motion, no dialogue, no logos, no labels, no real customer information, landscape 16:9.",
+      "evidenceIds": [
+        "concept"
+      ]
+    },
+    {
+      "id": "question",
+      "seconds": 8,
+      "headline": "Which handoff would you change?",
+      "narration": "Where does your team lose the context today? Let\u2019s build the next version around that moment.",
+      "visual": "Quiet end card: one question, fictional product wordmark, readable hold. No invented booking URL.",
+      "mediaType": "title",
+      "evidenceIds": [
+        "concept"
+      ]
+    }
+  ]
+}

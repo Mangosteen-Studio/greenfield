@@ -140,6 +140,8 @@ Don't need a full run? Greenfield includes focused skills you can invoke indepen
 | **Leadership Intel** | Executive deep dive, canonical Earned Right Test, narrative, message drafts | Earn the right to contact a specific executive |
 | **Account Review** | Quality audit of a completed Account Brief | Validate your research before going into the field |
 | **[Co-Selling](./skills/co-selling/SKILL.md)** | Partner signals, marketplace routes, seller incentives, and a detailed joint execution plan | Sell through a hyperscaler or platform, select partners as a hyperscaler seller, or plan a named customer opportunity |
+| **[Persona Demo](./skills/persona-demo/SKILL.md)** | Animated HTML walkthrough with separate buyer and presenter copies | Show one buyer situation and supported product actions |
+| **[Cold Video](./skills/cold-video/SKILL.md)** | Prospecting-video story, production plan and rendering workflow | Create a short buyer-specific video with your own provider access and budget |
 
 Each skill enforces the same guardrails as the full run.
 
@@ -193,3 +195,7 @@ Mangosteen Studio: [mangosteen.studio](https://mangosteen.studio)
 ## License
 
 MIT. See [LICENSE](./LICENSE).
+
+### Demo and video skill packages
+
+Keep each skill folder intact: references, scripts, assets and agent metadata work together. Persona Demo includes a Python HTML builder; Cold Video includes a Python production-brief helper. Both use the Python standard library. Cold Video preparation does not generate an MP4 or include paid provider credits.

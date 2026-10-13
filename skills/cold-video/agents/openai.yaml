@@ -1,0 +1,4 @@
+interface:
+  display_name: "Cold Video"
+  short_description: "Personalized prospect videos with Runway or fal.ai"
+  default_prompt: "Use $cold-video to prepare a personalized prospect video, including a story, paid provider plan and cost estimate before generation."
