@@ -1,0 +1,26 @@
+{
+  "title": "Investigate the month-end close bottleneck",
+  "candidate": "Example Candidate",
+  "company": "Example Ledger (fictional)",
+  "privateNotes": "PRIVATE_PANEL_SENTINEL: Ask how the panel evaluates discovery. Do not distribute these preparation notes.",
+  "sections": [
+    {
+      "title": "Customer point of view",
+      "body": "Fictional assignment: Northstar Parts reports delayed reconciliation. My hypothesis is that exception handoffs contribute to the delay. I would validate the cause with the controller before recommending automation.",
+      "evidence": "Assignment fact: reconciliation is delayed. Inference: handoffs may contribute. Source: fictional example brief; no real company claims.",
+      "notes": "PRIVATE_SPEAKER_SENTINEL: Explain why this is a hypothesis, not discovered pain. Allow 3 minutes."
+    },
+    {
+      "title": "Discovery and buyer map",
+      "body": "Start with the controller: which reconciliation step delays close, who handles exceptions, and how often does work return for correction? Ask who owns the source-system integration and who approves process changes. These are proposed roles, not confirmed contacts.",
+      "evidence": "Proposed discovery approach, not confirmed customer structure.",
+      "notes": "Allow 8 minutes; listen for a different root cause."
+    },
+    {
+      "title": "Next step and pivot",
+      "body": "If handoffs are the constraint, propose a working session to map one exception flow and establish a baseline. If source data quality is the constraint, investigate the upstream process first. Do not promise savings before measuring the work or verifying product fit.",
+      "evidence": "Conditional plan. Product fit, buyer agreement and impact remain unverified.",
+      "notes": "Reserve time for questions and a mutually agreed next step."
+    }
+  ]
+}

@@ -1,0 +1,4 @@
+interface:
+  display_name: "Sales Interview Skill"
+  short_description: "Turn a sales interview brief into a defensible POV"
+  default_prompt: "Use $sales-interview to prepare from my interview assignment and job description, identify missing context, and help me choose and defend a customer POV."
