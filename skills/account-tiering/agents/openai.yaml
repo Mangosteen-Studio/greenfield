@@ -1,0 +1,4 @@
+interface:
+  display_name: "Account Tiering"
+  short_description: "Prioritize an AE territory and plan weekly coverage"
+  default_prompt: "Use $account-tiering to prioritize my assigned AE territory, explain the evidence behind each tier, and build a weekly coverage plan within my available time."

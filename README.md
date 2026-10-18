@@ -141,6 +141,7 @@ Don't need a full run? Greenfield includes focused skills you can invoke indepen
 | **Account Review** | Quality audit of a completed Account Brief | Validate your research before going into the field |
 | **[Co-Selling](./skills/co-selling/SKILL.md)** | Partner signals, marketplace routes, seller incentives, and a detailed joint execution plan | Sell through a hyperscaler or platform, select partners as a hyperscaler seller, or plan a named customer opportunity |
 | **[Persona Demo](./skills/persona-demo/SKILL.md)** | Animated HTML walkthrough with separate buyer and presenter copies | Show one buyer situation and supported product actions |
+| **[Account Tiering](./skills/account-tiering/SKILL.md)** | Evidence-backed AE territory priorities and a realistic weekly coverage plan | Decide where to spend selling time across prospects, customers and active deals |
 | **[Sales Interview Skill](./skills/sales-interview/SKILL.md)** | Interview brief and job description into a defensible POV, timed prep and optional role-play or clickable account plan | Prepare for mock discovery, account plans, executive pitches and case exercises |
 | **[Cold Video](./skills/cold-video/SKILL.md)** | Prospecting-video story, production plan and rendering workflow | Create a short buyer-specific video with your own provider access and budget |
 
