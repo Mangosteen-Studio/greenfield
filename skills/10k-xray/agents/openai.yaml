@@ -1,0 +1,4 @@
+interface:
+  display_name: "10-K X-Ray"
+  short_description: "Turn a 10-K into a cited product-fit map for sales"
+  default_prompt: "Use $10k-xray to read a target company's 10-K, map where my product fits its segments, stated priorities and risks, and build a cited fit map with discovery questions."

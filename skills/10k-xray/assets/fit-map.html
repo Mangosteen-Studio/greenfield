@@ -1,0 +1,229 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>10-K X-Ray fit map</title>
+<style>
+  :root {
+    --bg: #f7f6f2; --panel: #ffffff; --ink: #18181b; --muted: #5b5b66; --line: #d9d7cf;
+    --seg: #2563eb; --priority: #059669; --risk: #dc2626; --spend: #b45309; --cap: #7c3aed;
+    --warn-bg: #fff7d6; --warn-ink: #6b4e00;
+  }
+  @media (prefers-color-scheme: dark) {
+    :root {
+      --bg: #101014; --panel: #18181f; --ink: #ececf1; --muted: #a0a0ad; --line: #2e2e38;
+      --seg: #60a5fa; --priority: #34d399; --risk: #f87171; --spend: #fbbf24; --cap: #a78bfa;
+      --warn-bg: #3a300c; --warn-ink: #f8e3a0;
+    }
+  }
+  * { box-sizing: border-box; }
+  body { margin: 0; background: var(--bg); color: var(--ink); font: 15px/1.5 system-ui, -apple-system, "Segoe UI", sans-serif; }
+  .page { max-width: 1180px; margin: 0 auto; padding: 28px 16px 48px; }
+  .banner { background: var(--warn-bg); color: var(--warn-ink); border-radius: 8px; padding: 10px 14px; font-weight: 600; margin-bottom: 18px; }
+  header h1 { margin: 0 0 4px; font-size: 28px; letter-spacing: -0.01em; }
+  header p { margin: 0; color: var(--muted); }
+  header a { color: inherit; }
+  .legend { display: flex; flex-wrap: wrap; gap: 14px; margin: 18px 0 10px; color: var(--muted); font-size: 13px; }
+  .legend span { display: inline-flex; align-items: center; gap: 6px; }
+  .legend i { width: 10px; height: 10px; border-radius: 3px; display: inline-block; }
+  .legend .solid, .legend .dashed { width: 26px; height: 0; border-top: 2px solid var(--muted); border-radius: 0; }
+  .legend .dashed { border-top-style: dashed; }
+  .map { position: relative; display: grid; grid-template-columns: 1fr 1.35fr 1fr; gap: 56px; margin-top: 8px; }
+  .col h2 { font-size: 12px; text-transform: uppercase; letter-spacing: 0.08em; color: var(--muted); margin: 0 0 10px; }
+  .node { position: relative; z-index: 1; background: var(--panel); border: 1px solid var(--line); border-left: 4px solid var(--c); border-radius: 8px; padding: 10px 12px; margin-bottom: 12px; opacity: 0; transform: translateY(6px); animation: rise .5s ease forwards; animation-delay: var(--d, 0s); }
+  .node strong { display: block; font-size: 14px; }
+  .node small { display: block; color: var(--muted); font-size: 12px; margin-top: 2px; }
+  .node .kind { font-size: 11px; font-weight: 700; text-transform: uppercase; letter-spacing: .06em; color: var(--c); }
+  .bar { height: 6px; background: var(--line); border-radius: 3px; margin-top: 8px; overflow: hidden; }
+  .bar b { display: block; height: 100%; background: var(--seg); width: 0; animation: grow 1s ease forwards; animation-delay: var(--d, 0s); }
+  .node.dim { opacity: .35 !important; }
+  svg.links { position: absolute; inset: 0; width: 100%; height: 100%; pointer-events: none; overflow: visible; z-index: 0; }
+  svg.links path { fill: none; stroke-width: 2; opacity: .75; }
+  svg.links path.draw { stroke-dasharray: var(--len); stroke-dashoffset: var(--len); animation: draw .9s ease forwards; animation-delay: var(--d, 0s); }
+  svg.links path.inferred.done { stroke-dasharray: 6 5; }
+  section.table { margin-top: 36px; }
+  section.table h2, section.notes h2 { font-size: 18px; margin: 0 0 10px; }
+  .fit { background: var(--panel); border: 1px solid var(--line); border-radius: 8px; padding: 12px 14px; margin-bottom: 10px; }
+  .fit .row1 { display: flex; flex-wrap: wrap; gap: 8px; align-items: baseline; }
+  .fit .tag { font-size: 11px; font-weight: 700; text-transform: uppercase; letter-spacing: .06em; padding: 2px 6px; border-radius: 4px; border: 1px solid var(--line); color: var(--muted); }
+  .fit p { margin: 6px 0 0; }
+  .fit .ask { color: var(--priority); font-weight: 600; }
+  .notes { margin-top: 28px; display: grid; grid-template-columns: 1fr 1fr; gap: 24px; }
+  .notes ol, .notes ul { margin: 0; padding-left: 20px; color: var(--muted); font-size: 13px; }
+  .notes li { margin-bottom: 6px; }
+  footer { margin-top: 32px; color: var(--muted); font-size: 12px; }
+  @keyframes rise { to { opacity: 1; transform: none; } }
+  @keyframes grow { to { width: var(--w); } }
+  @keyframes draw { to { stroke-dashoffset: 0; } }
+  @media (max-width: 760px) {
+    .map { grid-template-columns: 1fr; gap: 8px; }
+    svg.links { display: none; }
+    .notes { grid-template-columns: 1fr; }
+  }
+  @media (prefers-reduced-motion: reduce) {
+    .node, .bar b, svg.links path.draw { animation: none; opacity: 1; transform: none; stroke-dashoffset: 0; }
+    .bar b { width: var(--w); }
+  }
+</style>
+</head>
+<body>
+<div class="page" id="app"></div>
+<script>
+/* DATA:START */
+const DATA = {
+  example: true,
+  company: { name: "Harborline Foods, Inc.", ticker: "HRBL", form: "10-K", fiscalYear: "FY2026", filed: "2026-02-20", filingUrl: null },
+  seller: { name: "Routewise", product: "Fleet routing and delivery analytics" },
+  segments: [
+    { id: "s1", name: "Retail Grocery", revenue: "$6.1B", share: "61%", cite: "c1" },
+    { id: "s2", name: "Foodservice", revenue: "$3.2B", share: "32%", cite: "c1" },
+    { id: "s3", name: "Direct-to-Consumer", revenue: "$0.7B", share: "7%", cite: "c1" }
+  ],
+  signals: [
+    { id: "p1", kind: "priority", text: "Consolidate 14 regional distribution centers into 9 by FY2028", segment: "s1", cite: "c2" },
+    { id: "r1", kind: "risk", text: "Rising freight and fuel costs are compressing foodservice margins", segment: "s2", cite: "c3" },
+    { id: "x1", kind: "spend", text: "Capex weighted toward warehouse automation and fleet replacement", segment: "s1", cite: "c4" },
+    { id: "p2", kind: "priority", text: "Grow direct-to-consumer delivery in three new metro areas", segment: "s3", cite: "c5" }
+  ],
+  capabilities: [
+    { id: "k1", name: "Network and route redesign modeling" },
+    { id: "k2", name: "Cost-per-stop analytics" },
+    { id: "k3", name: "Last-mile delivery planning" }
+  ],
+  owners: [
+    { id: "o1", name: "Dana Okafor", title: "Chief Supply Chain Officer", cite: "c6" },
+    { id: "o2", name: "Luis Brennan", title: "President, Foodservice", cite: "c6" }
+  ],
+  fit: [
+    { capability: "k1", signal: "p1", owner: "o1", evidence: "stated", why: "A consolidation this size changes every delivery route out of the closing centers.", ask: "How are you modeling the route impact of each center closure before it happens?" },
+    { capability: "k2", signal: "r1", owner: "o2", evidence: "stated", why: "Freight cost is the margin pressure management named for foodservice.", ask: "Where can you see cost per stop today, by customer or by route?" },
+    { capability: "k3", signal: "p2", owner: null, evidence: "inferred", why: "New metro delivery needs last-mile planning, but the filing does not say how they plan to run it.", ask: "Will the new metros run on your own fleet or a delivery partner?" }
+  ],
+  citations: {
+    c1: { item: "Note 15, Segment Information", page: "88", quote: "Retail Grocery net sales were $6.1 billion, or 61% of total net sales." },
+    c2: { item: "Item 1, Business", page: "6", quote: "we plan to consolidate our 14 regional distribution centers into 9 by the end of fiscal 2028" },
+    c3: { item: "Item 7, MD&A", page: "41", quote: "higher freight and fuel costs reduced Foodservice operating margin" },
+    c4: { item: "Item 7, Liquidity and Capital Resources", page: "47", quote: "capital expenditures will focus on warehouse automation and fleet replacement" },
+    c5: { item: "Item 1, Business", page: "8", quote: "we intend to launch direct delivery in three additional metropolitan areas" },
+    c6: { item: "Part I, Information about our Executive Officers", page: "24", quote: "Dana Okafor, Chief Supply Chain Officer; Luis Brennan, President, Foodservice" }
+  },
+  gaps: [
+    "No disclosed budget for routing or analytics software.",
+    "Current routing tools and vendors are not named.",
+    "No owner named for direct-to-consumer delivery."
+  ]
+};
+/* DATA:END */
+
+(function () {
+  const esc = (s) => String(s == null ? "" : s).replace(/[&<>"']/g, (c) => ({ "&": "&amp;", "<": "&lt;", ">": "&gt;", '"': "&quot;", "'": "&#39;" }[c]));
+  const byId = (list) => Object.fromEntries((list || []).map((x) => [x.id, x]));
+  const seg = byId(DATA.segments), sig = byId(DATA.signals), cap = byId(DATA.capabilities), own = byId(DATA.owners);
+  const cite = (k) => {
+    const c = DATA.citations && DATA.citations[k];
+    return c ? `${esc(c.item)}${c.page ? ", p. " + esc(c.page) : ""}` : "UNVERIFIED";
+  };
+  const kindColor = { priority: "var(--priority)", risk: "var(--risk)", spend: "var(--spend)" };
+  const kindLabel = { priority: "Stated priority", risk: "Risk", spend: "Spending signal" };
+  const co = DATA.company || {};
+  const pct = (s) => { const m = /([\d.]+)\s*%/.exec(s || ""); return m ? Math.min(100, parseFloat(m[1])) : null; };
+
+  const app = document.getElementById("app");
+  app.innerHTML = `
+    ${DATA.example ? '<div class="banner">Fictional example. Harborline Foods and Routewise are invented to show the format. Replace the DATA block with a real, cited X-Ray.</div>' : ""}
+    <header>
+      <h1>${esc(co.name)}${co.ticker ? " (" + esc(co.ticker) + ")" : ""}: where ${esc(DATA.seller && DATA.seller.name)} fits</h1>
+      <p>${esc(co.form || "10-K")} ${esc(co.fiscalYear || "")}${co.filed ? " · filed " + esc(co.filed) : ""}${co.filingUrl ? ` · <a href="${esc(co.filingUrl)}" target="_blank" rel="noopener">source filing</a>` : ""} · ${esc(DATA.seller && DATA.seller.product)}</p>
+    </header>
+    <div class="legend">
+      <span><i style="background:var(--seg)"></i>Segment</span>
+      <span><i style="background:var(--priority)"></i>Stated priority</span>
+      <span><i style="background:var(--risk)"></i>Risk</span>
+      <span><i style="background:var(--spend)"></i>Spending signal</span>
+      <span><i style="background:var(--cap)"></i>Your capability</span>
+      <span><i class="solid"></i>Filing states the need</span>
+      <span><i class="dashed"></i>Inferred, validate in discovery</span>
+    </div>
+    <div class="map" id="map">
+      <svg class="links" id="links" aria-hidden="true"></svg>
+      <div class="col"><h2>Business segments</h2>${(DATA.segments || []).map((s, i) => {
+        const w = pct(s.share);
+        return `<div class="node" data-id="${esc(s.id)}" style="--c:var(--seg);--d:${i * 0.12}s">
+          <strong>${esc(s.name)}</strong>
+          <small>${s.revenue ? esc(s.revenue) : "revenue not disclosed"}${s.share ? " · " + esc(s.share) + " of total" : ""} · ${cite(s.cite)}</small>
+          ${w != null ? `<div class="bar"><b style="--w:${w}%;--d:${0.3 + i * 0.12}s"></b></div>` : ""}
+        </div>`;
+      }).join("")}</div>
+      <div class="col"><h2>What the 10-K says</h2>${(DATA.signals || []).map((s, i) => `
+        <div class="node" data-id="${esc(s.id)}" style="--c:${kindColor[s.kind] || "var(--muted)"};--d:${0.4 + i * 0.12}s">
+          <span class="kind">${esc(kindLabel[s.kind] || s.kind)}</span>
+          <strong>${esc(s.text)}</strong>
+          <small>${cite(s.cite)}</small>
+        </div>`).join("")}</div>
+      <div class="col"><h2>Your capabilities</h2>${(DATA.capabilities || []).map((c, i) => `
+        <div class="node" data-id="${esc(c.id)}" style="--c:var(--cap);--d:${0.8 + i * 0.12}s">
+          <strong>${esc(c.name)}</strong>
+          ${(() => { const owners = (DATA.fit || []).filter((f) => f.capability === c.id).map((f) => f.owner && own[f.owner] ? `${esc(own[f.owner].name)}, ${esc(own[f.owner].title)}` : "owner to validate"); return owners.length ? `<small>Owner: ${[...new Set(owners)].join("; ")}</small>` : "<small>No supported fit found</small>"; })()}
+        </div>`).join("")}</div>
+    </div>
+    <section class="table"><h2>Fit hypotheses</h2>${(DATA.fit || []).map((f, i) => {
+      const s = sig[f.signal] || {}, c = cap[f.capability] || {}, o = f.owner && own[f.owner];
+      return `<div class="fit">
+        <div class="row1"><strong>${i + 1}. ${esc(c.name)} → ${esc(s.text)}</strong>
+          <span class="tag">${f.evidence === "stated" ? "Filing states the need" : "Inferred"}</span>
+          <span class="tag">${s.segment && seg[s.segment] ? esc(seg[s.segment].name) : "Segment n/a"}</span></div>
+        <p>${esc(f.why)}</p>
+        <p><small>Owner: ${o ? esc(o.name) + ", " + esc(o.title) : "owner to validate"} · Source: ${cite(s.cite)}</small></p>
+        <p class="ask">Ask: ${esc(f.ask)}</p>
+      </div>`;
+    }).join("") || "<p>No supported fit found in this filing.</p>"}</section>
+    <div class="notes">
+      <section class="notes-col"><h2>Citations</h2><ol>${Object.entries(DATA.citations || {}).map(([k, c]) => `<li><strong>${esc(k)}</strong> ${esc(c.item)}${c.page ? ", p. " + esc(c.page) : ""}: “${esc(c.quote)}”</li>`).join("")}</ol></section>
+      <section class="notes-col"><h2>What the 10-K can't tell you</h2><ul>${(DATA.gaps || []).map((g) => `<li>${esc(g)}</li>`).join("")}</ul></section>
+    </div>
+    <footer>Made with the free 10-K X-Ray skill · greenfield.tools/10k-xray · Fit rows are hypotheses to test in discovery, not findings. Not investment advice.</footer>`;
+
+  const map = document.getElementById("map"), svg = document.getElementById("links");
+  const reduce = window.matchMedia && window.matchMedia("(prefers-reduced-motion: reduce)").matches;
+  let drawn = false;
+  function center(el, side) {
+    const m = map.getBoundingClientRect(), r = el.getBoundingClientRect();
+    return { x: (side === "right" ? r.right : r.left) - m.left, y: r.top + r.height / 2 - m.top };
+  }
+  function curve(a, b) { const dx = (b.x - a.x) / 2; return `M${a.x},${a.y} C${a.x + dx},${a.y} ${b.x - dx},${b.y} ${b.x},${b.y}`; }
+  function node(id) { return map.querySelector(`.node[data-id="${CSS.escape(id)}"]`); }
+  function draw() {
+    if (getComputedStyle(svg).display === "none") return;
+    svg.innerHTML = "";
+    let i = 0;
+    const add = (d, color, inferred) => {
+      const p = document.createElementNS("http://www.w3.org/2000/svg", "path");
+      p.setAttribute("d", d); p.setAttribute("stroke", color);
+      if (inferred) p.classList.add("inferred");
+      svg.appendChild(p);
+      if (!drawn && !reduce) {
+        const len = Math.ceil(p.getTotalLength());
+        p.style.setProperty("--len", len); p.style.setProperty("--d", `${0.1 + i * 0.12}s`); p.classList.add("draw");
+        p.addEventListener("animationend", () => { p.classList.remove("draw"); p.classList.add("done"); });
+      } else { p.classList.add("done"); }
+      i++;
+    };
+    (DATA.signals || []).forEach((s) => {
+      const a = s.segment && node(s.segment), b = node(s.id);
+      if (a && b) add(curve(center(a, "right"), center(b, "left")), "var(--seg)", false);
+    });
+    (DATA.fit || []).forEach((f) => {
+      const a = node(f.signal), b = node(f.capability);
+      if (a && b) add(curve(center(a, "right"), center(b, "left")), "var(--cap)", f.evidence !== "stated");
+    });
+    drawn = true;
+  }
+  const used = new Set((DATA.fit || []).map((f) => f.capability));
+  (DATA.capabilities || []).forEach((c) => { if (!used.has(c.id)) { const n = node(c.id); if (n) n.classList.add("dim"); } });
+  window.addEventListener("load", () => setTimeout(draw, reduce ? 0 : 700));
+  let t; window.addEventListener("resize", () => { clearTimeout(t); t = setTimeout(draw, 150); });
+})();
+</script>
+</body>
+</html>

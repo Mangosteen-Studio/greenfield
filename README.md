@@ -143,6 +143,7 @@ Don't need a full run? Greenfield includes focused skills you can invoke indepen
 | **[Persona Demo](./skills/persona-demo/SKILL.md)** | Animated HTML walkthrough with separate buyer and presenter copies | Show one buyer situation and supported product actions |
 | **[Account Tiering](./skills/account-tiering/SKILL.md)** | Evidence-backed AE territory priorities and a realistic weekly coverage plan | Decide where to spend selling time across prospects, customers and active deals |
 | **[Sales Interview Skill](./skills/sales-interview/SKILL.md)** | Interview brief and job description into a defensible POV, timed prep and optional role-play or clickable account plan | Prepare for mock discovery, account plans, executive pitches and case exercises |
+| **[10-K X-Ray](./skills/10k-xray/SKILL.md)** | Cited fit table, discovery questions and an animated fit map from a public company's 10-K | See where your product fits a target account's segments, stated priorities and risks |
 | **[Cold Video](./skills/cold-video/SKILL.md)** | Prospecting-video story, production plan and rendering workflow | Create a short buyer-specific video with your own provider access and budget |
 
 Each skill includes evidence and writing guardrails suited to its workflow. Sales Interview Skill starts from the assignment and job description, with grouped questions only for important gaps.
