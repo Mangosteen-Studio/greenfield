@@ -1,0 +1,4 @@
+interface:
+  display_name: "Sales Follow-Up Email"
+  short_description: "Write the follow-up email after a sales call from your notes"
+  default_prompt: "Use $sales-follow-up-email to turn my call notes into a same-day recap email with one clear next step, a forwardable version for my champion, and a no-reply plan."
