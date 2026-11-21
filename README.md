@@ -145,6 +145,7 @@ Don't need a full run? Greenfield includes focused skills you can invoke indepen
 | **[Sales Interview Skill](./skills/sales-interview/SKILL.md)** | Interview brief and job description into a defensible POV, timed prep and optional role-play or clickable account plan | Prepare for mock discovery, account plans, executive pitches and case exercises |
 | **[10-K X-Ray](./skills/10k-xray/SKILL.md)** | Cited fit table, discovery questions and an animated fit map from a public company's 10-K | See where your product fits a target account's segments, stated priorities and risks |
 | **[Sales Follow-Up Email](./skills/sales-follow-up-email/SKILL.md)** | Same-day recap, forwardable champion summary, no-reply plan and CRM note from your call notes | Send the follow-up email after a sales call, demo or executive meeting |
+| **[Speak Their Industry](./skills/speak-their-industry/SKILL.md)** | Industry briefing, a voice roleplay prompt for ChatGPT or Gemini voice mode, and a scorecard from your practice transcript | Sound credible selling into healthcare and life sciences, financial services, retail or government |
 | **[Cold Video](./skills/cold-video/SKILL.md)** | Prospecting-video story, production plan and rendering workflow | Create a short buyer-specific video with your own provider access and budget |
 
 Each skill includes evidence and writing guardrails suited to its workflow. Sales Interview Skill starts from the assignment and job description, with grouped questions only for important gaps.
