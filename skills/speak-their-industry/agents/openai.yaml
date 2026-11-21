@@ -1,0 +1,4 @@
+interface:
+  display_name: "Speak Their Industry"
+  short_description: "Learn how an industry buys, then rehearse with a live voice roleplay"
+  default_prompt: "Use $speak-their-industry to brief me on selling to a [buyer role] in [healthcare / financial services / retail / government], write a voice roleplay prompt I can practice with, and score my transcript afterwards."
