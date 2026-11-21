@@ -1,6 +1,6 @@
 # Healthcare and life sciences
 
-Orientation, last reviewed November 2026. Regulations and programs change: confirm current requirements with the seller's legal or compliance team before making commitments. Do not add statistics unless the user supplies a source.
+Orientation, last reviewed 21 November 2026 against the sources linked below. Items marked *(changing)* were in flux at that date: treat them as `VERIFY:` in any briefing. Regulations and programs change: confirm current requirements with the seller's legal or compliance team before making commitments. Do not add statistics unless the user supplies a source.
 
 ## Segments behave differently
 
@@ -18,14 +18,16 @@ Ask which segment before giving advice. A hospital CFO and a pharma commercial l
 - **VP of revenue cycle:** denials, clean claim rate, collections, coding accuracy.
 - **Supply chain / value analysis:** product cost, standardization, contract compliance.
 - **Payer leaders:** medical loss ratio, Star ratings (Medicare Advantage), member retention, prior authorization workload.
-- **Life sciences leaders:** clinical trial timelines and enrolment, regulatory submissions, field force effectiveness, launch performance.
+- **Life sciences leaders:** clinical trial timelines and enrollment, regulatory submissions, field force effectiveness, launch performance.
 
-## How deals get approved (typical, varies by organization)
+## How deals get approved (provider example, varies by organization)
+
+Payers and life sciences companies follow their own paths; do not assume hospital committees or GPOs apply to them.
 
 1. A clinical or operational sponsor identifies the problem.
 2. Product and supply purchases often go through a **value analysis committee** that weighs clinical evidence and cost.
-3. Technology purchases go through **IT and security review**, including a security questionnaire and integration review with the EHR (for example Epic or Oracle Health).
-4. If the vendor will create, receive, store or transmit protected health information, a **business associate agreement (BAA)** is required.
+3. Technology purchases go through **IT and security review**, including a security questionnaire and integration review with the EHR (for example Epic or Oracle Health). Clinical or nursing informatics teams and an IT governance committee often decide whether a tool gets prioritized.
+4. If the vendor will act as a HIPAA **business associate** (creating, receiving, maintaining or transmitting protected health information on the organization's behalf), a **business associate agreement (BAA)** is generally required. Confirm the relationship with the buyer's privacy team ([HHS guidance](https://www.hhs.gov/hipaa/for-professionals/privacy/guidance/business-associates/index.html)).
 5. Many hospitals buy through **group purchasing organizations (GPOs)** such as Vizient, Premier or HealthTrust. Ask whether the seller has, or needs, a GPO contract.
 6. Finance and, for larger deals, executive or board approval. Budgets are often set annually; fiscal years vary by organization.
 
@@ -33,7 +35,8 @@ Life sciences adds **quality and validation** steps for systems used in regulate
 
 ## Rules that shape the deal
 
-- **HIPAA (Privacy and Security Rules) and HITECH:** govern protected health information. Question for the seller: will the product touch PHI, and can you sign a BAA?
+- **HIPAA (Privacy and Security Rules) and HITECH:** govern protected health information. Question for the seller: will the product touch PHI, and can you sign a BAA? *(changing)* HHS proposed a major Security Rule update in January 2025; it was not final at last review, but security reviewers already ask about MFA, encryption and asset inventories.
+- **42 CFR Part 2:** stricter confidentiality for substance use disorder treatment records. Question: could the product handle behavioral health or substance use data?
 - **Interoperability standards (HL7, FHIR):** question: how does the product integrate with the EHR, and who does the integration work?
 - **FDA regulation:** applies to drugs, devices and some software (software as a medical device). Question: does the product make clinical claims that could make it a regulated device?
 - **21 CFR Part 11 and GxP:** electronic records and validated systems in life sciences. Question: is the system used in regulated processes, and what validation documentation exists?

@@ -1,6 +1,6 @@
 # Retail
 
-Orientation, last reviewed November 2026. Confirm current requirements with the seller's legal or compliance team before making commitments. Do not add statistics unless the user supplies a source.
+Orientation, last reviewed 21 November 2026 against the sources linked below. Items marked *(changing)* were in flux at that date: treat them as `VERIFY:` in any briefing. Confirm current requirements with the seller's legal or compliance team before making commitments. Do not add statistics unless the user supplies a source.
 
 ## Segments behave differently
 
@@ -10,6 +10,8 @@ Orientation, last reviewed November 2026. Confirm current requirements with the 
 - **Ecommerce and direct-to-consumer brands:** acquisition cost, conversion, fulfillment, returns.
 - **Restaurants and quick service** often get grouped with retail but buy around franchisees and store operations.
 
+Selling *to* a retailer differs from selling to the brands that supply them. Supplier-facing products meet vendor onboarding, EDI requirements and chargeback rules.
+
 Ask about the operating model: corporate-owned stores versus franchise changes who decides.
 
 ## Buyers and what they are measured on
@@ -17,6 +19,7 @@ Ask about the operating model: corporate-owned stores versus franchise changes w
 - **Merchandising (VP or chief merchant):** sales, gross margin, sell-through, markdowns, assortment performance.
 - **Supply chain / logistics:** inventory turns, in-stock rate, fulfillment cost, forecast accuracy.
 - **Store operations:** labor cost and scheduling, shrink, store execution, customer experience.
+- **Loss prevention / asset protection:** shrink, organized retail crime, store safety.
 - **Ecommerce / digital:** conversion, average order value, fulfillment speed, returns.
 - **CMO / loyalty:** customer acquisition and retention, loyalty program engagement, retail media revenue.
 - **CIO / CTO / CISO:** platform stability, peak season readiness, PCI compliance, integration load.
@@ -34,7 +37,7 @@ Ask about the operating model: corporate-owned stores versus franchise changes w
 
 ## Rules that shape the deal
 
-- **PCI DSS:** card payment data security. Question: does the product touch card data, and does it change the retailer's PCI scope?
+- **PCI DSS (v4.0.1):** card payment data security. Ecommerce teams now manage controls on payment-page scripts (requirements 6.4.3 and 11.6.1). Question: does the product touch card data, add scripts to checkout pages, or change the retailer's PCI scope?
 - **Consumer privacy laws (state privacy laws such as California's CCPA/CPRA, and GDPR for EU customers):** question: what customer data does the product collect, and how does it support consent and deletion requests?
 - **Accessibility (ADA and web accessibility expectations):** question for customer-facing digital products: how do you support accessibility?
 - **Labor and scheduling rules** (some cities and states have predictive scheduling laws): question for workforce products: does it support local scheduling rules?

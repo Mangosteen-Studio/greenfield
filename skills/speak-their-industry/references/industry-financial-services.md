@@ -1,10 +1,10 @@
 # Financial services
 
-Orientation, last reviewed November 2026. Regulations and supervisory guidance change: confirm current requirements with the seller's legal or compliance team before making commitments. Do not add statistics unless the user supplies a source.
+Orientation, last reviewed 21 November 2026 against the sources linked below. Items marked *(changing)* were in flux at that date: treat them as `VERIFY:` in any briefing. Regulations and supervisory guidance change: confirm current requirements with the seller's legal or compliance team before making commitments. Do not add statistics unless the user supplies a source.
 
 ## Segments behave differently
 
-- **Banks and credit unions:** retail, commercial and community banks. Deposits, lending, risk and regulatory exams dominate.
+- **Banks and credit unions:** retail, commercial and community banks, and credit unions. Deposits, lending, risk and regulatory exams dominate. Credit unions are supervised by the NCUA and state regulators, not the OCC.
 - **Insurance:** property and casualty, life and annuities, health. Underwriting, claims, loss ratios and distribution dominate.
 - **Capital markets and asset management:** broker-dealers, investment banks, asset and wealth managers. Assets under management, trading, client experience and compliance dominate.
 - **Fintech and payments:** often faster-moving, but still bound by partner bank, card network and regulator requirements.
@@ -31,12 +31,12 @@ Size matters: a community bank and a global bank buy very differently.
 
 ## Rules that shape the deal
 
-- **Interagency guidance on third-party relationships (US bank regulators, 2023):** banks remain responsible for risks from vendors. Question: what due diligence and ongoing monitoring will you support?
-- **Model risk management guidance (Federal Reserve SR 11-7 and OCC equivalent):** governs models used in decisions. Question: can you explain how the model works, how it is validated and monitored?
+- **Interagency guidance on third-party relationships (US bank regulators, 2023):** banks remain responsible for risks from vendors. Question: what due diligence and ongoing monitoring will you support? *(changing)* In September 2026 the OCC, Federal Reserve, FDIC and NCUA proposed replacing this guidance with a more risk-tailored version; comments closed November 16, 2026 ([NCUA](https://ncua.gov/newsroom/press-release/2026/agencies-seek-comment-proposed-third-party-risk-management-guidance-and-issue-statement-community)).
+- **Model risk management guidance (SR 26-2, April 2026, which replaced SR 11-7):** risk-based supervisory guidance for models used in decisions. Generative and agentic AI are outside its formal scope, but banks still govern them through their own AI and risk policies ([Federal Reserve](https://www.federalreserve.gov/supervisionreg/srletters/sr2602.htm)). Question: can you explain how the model works, how it is validated and monitored, and how the bank governs AI tools today? Saying "SR 11-7" to a risk leader now sounds dated.
 - **Gramm-Leach-Bliley Act (GLBA):** customer financial data privacy and safeguards. Question: what customer data does the product access, and where is it stored?
-- **PCI DSS:** card payment data security. Question: does the product store, process or transmit card data?
+- **PCI DSS (v4.0.1):** card payment data security. Question: does the product store, process or transmit card data?
 - **AML / BSA and KYC requirements:** question for compliance-facing products: how does this help the institution meet its obligations and show it to examiners?
-- **Fair lending and consumer protection (ECOA, UDAAP, CFPB oversight):** question for lending or customer-facing AI: how do you test for bias and explain decisions?
+- **Fair lending and consumer protection (ECOA and Regulation B adverse action notices, UDAAP):** question for lending or customer-facing AI: how do you test for bias and explain decisions? *(changing)* Federal enforcement priorities have shifted; state attorneys general and state regulators may be the more active enforcers. Ask the buyer what their compliance team is focused on.
 - **NYDFS Part 500 (New York regulated firms) and the EU's DORA (EU financial entities):** cybersecurity and operational resilience requirements that reach critical vendors.
 - **SEC and FINRA rules** for broker-dealers and advisers, including communications recordkeeping.
 

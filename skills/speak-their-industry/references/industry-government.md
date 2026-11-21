@@ -1,6 +1,6 @@
 # Government
 
-Orientation, last reviewed November 2026. Procurement rules, authorization programs and thresholds change often and differ by jurisdiction: confirm current requirements with the seller's contracts or legal team before making commitments. Do not add statistics or dollar thresholds unless the user supplies a current source.
+Orientation, last reviewed 21 November 2026 against the sources linked below. Items marked *(changing)* were in flux at that date: treat them as `VERIFY:` in any briefing. Procurement rules, authorization programs and thresholds change often and differ by jurisdiction: confirm current requirements with the seller's contracts or legal team before making commitments. Do not add statistics or dollar thresholds unless the user supplies a current source.
 
 ## Levels behave differently
 
@@ -24,18 +24,18 @@ Ask which level and which agency or jurisdiction before giving advice. Rules tha
 1. **Budget comes first.** Funding is appropriated by a legislature or council. Ask whether money exists for this need and in which fiscal year.
 2. **Market research:** agencies may publish a request for information (RFI) or sources sought notice. Responding is how sellers shape requirements early.
 3. **Contract vehicle:** the purchase must fit a legal path, such as an open competition (RFP), an existing contract vehicle (for example a GSA Multiple Award Schedule or a governmentwide contract), a cooperative purchasing contract (for state and local, for example NASPO ValuePoint, Sourcewell or OMNIA Partners), or a small purchase under a threshold. Sole-source awards need written justification.
-4. **Security authorization:** federal cloud products generally need **FedRAMP** authorization; agencies also issue an authority to operate (ATO). Many states use their own requirements or GovRAMP (formerly StateRAMP).
+4. **Security authorization:** federal cloud products generally need **FedRAMP** authorization, and agencies also issue their own authority to operate (ATO). *(changing)* FedRAMP 20x lets providers pursue Program Certification without an agency sponsor; sponsored Rev5 is the legacy path, with new sponsored applications closing June 11, 2027 ([FedRAMP](https://fedramp.gov/2026/agencies/sponsoring/)). Many states use their own requirements or GovRAMP (formerly StateRAMP); public safety and tax data bring CJIS Security Policy and IRS Publication 1075 requirements.
 5. **Evaluation and award** against published criteria, followed by possible protests from losing bidders.
 
 **Timing:** the US federal fiscal year runs October 1 to September 30. Year-end (July to September) often brings spending on funds that would otherwise expire, and a **continuing resolution** can delay new programs. State and local fiscal years vary; many start July 1. Ask rather than assume.
 
 ## Rules that shape the deal
 
-- **Federal Acquisition Regulation (FAR) and agency supplements:** question: which contract vehicle or method would the agency use?
+- **Federal Acquisition Regulation (FAR) and agency supplements:** question: which contract vehicle or method would the agency use? *(changing)* The FAR is being rewritten through the Revolutionary FAR Overhaul, partly through agency class deviations; ask which version the contracting office is applying.
 - **SAM.gov registration:** required to receive most federal awards. Question for the seller: are you registered, or do you sell through a reseller or prime contractor?
-- **FedRAMP and agency ATO:** question: is the product authorized, in process, or deployable on an authorized platform?
-- **CMMC (Cybersecurity Maturity Model Certification):** applies to defense contractors handling federal contract information or controlled unclassified information. Question: does the deal require a CMMC level?
-- **Section 508:** accessibility of technology used by federal agencies. Question: do you have an accessibility conformance report (VPAT)?
+- **FedRAMP and agency ATO:** question: is the product authorized or in process, and at what level? Hosting on authorized infrastructure does not by itself authorize your application.
+- **CMMC (Cybersecurity Maturity Model Certification):** applies to defense contractors handling federal contract information or controlled unclassified information. Question: does the solicitation require a CMMC level? *(changing)* The Department of War suspended Phase 2 (third-party Level 2 assessments) in July 2026 pending review; self-assessments and DFARS 252.204-7012 obligations still apply ([DoD CIO](https://dodcio.defense.gov/CMMC/About/)).
+- **Section 508:** accessibility of technology used by federal agencies. Question: do you have an Accessibility Conformance Report (ACR), usually built on the VPAT template?
 - **Ethics and gift rules and the Procurement Integrity Act:** sharply limit gifts, meals and access to non-public procurement information. Never offer anything of value and never ask for competitors' information.
 - **Public records laws (FOIA and state equivalents):** proposals and correspondence may become public. Mark proprietary information as the rules allow.
 
@@ -55,7 +55,7 @@ Mission, appropriation, fiscal year, contract vehicle, RFI, sources sought, RFP,
 
 - "We don't have budget for this." Ask when the next budget cycle starts and what it would take to get the need into it.
 - "You'd have to be on a contract vehicle." Ask which vehicles they use, and whether a reseller or prime partner on that vehicle could carry the product.
-- "You're not FedRAMP authorized." Ask what level they need and whether an agency sponsor or an authorized platform path is possible; do not claim authorization you do not have.
+- "You're not FedRAMP authorized." Ask what impact level they need and whether a FedRAMP 20x path, an existing authorization at another agency, or a partner whose authorized offering includes your product is possible; do not claim authorization you do not have.
 - "This has to go out for competition." Agree, and ask whether there is an RFI or market research phase where you can help define requirements.
 - "Our last modernization project failed." Ask what went wrong; propose a smaller, measurable first phase.
 
